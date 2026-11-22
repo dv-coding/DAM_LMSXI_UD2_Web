@@ -10,7 +10,7 @@
 <body>
 
   <!-- Cabecera del club -->
-  <header>
+  <header class="contenedor-limpio">
     <div id="cabecera-club">
       <img src="img/logo-club.png" alt="Emblema del Club BMW Clásicos Galicia" width="64" height="64">
       <div>
@@ -18,14 +18,15 @@
         <p class="subtitulo">Rutas, mecánica y afición por los Serie 3 clásicos en el noroeste</p>
       </div>
     </div>
+    <a class="enlace-repo" href="https://dv-coding.github.io/DAM_LMSXI_UD2_Web/" target="_blank">Ver versión online</a>
   </header>
 
   <!-- Menú principal -->
-  <nav aria-label="Menú principal">
+  <nav>
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="modelos.html">Modelos y Rutas</a></li>
-      <li><a href="inscripcion.html" class="menu-pagina-activa" aria-current="page">Inscripción</a></li>
+      <li><a href="inscripcion.html" class="menu-pagina-activa">Inscripción</a></li>
     </ul>
   </nav>
 
@@ -35,7 +36,6 @@
       <p>Rellena este formulario para inscribirte como socio o apuntarte a nuestra próxima ruta.</p>
       <p class="aviso-form">Los campos con borde rojo a la izquierda son obligatorios.</p>
 
-      <!-- El action redirige a gracias.html, donde se ven los datos al usar method get sin servidor -->
       <form action="gracias.html" method="get">
 
         <!-- Datos personales -->
@@ -67,7 +67,6 @@
         <fieldset>
           <legend>Tu BMW y preferencias</legend>
 
-          <!-- Radio buttons con el mismo name para opción única -->
           <p><strong>Generación de tu coche</strong></p>
           <div class="campo grupo-opciones">
             <input type="radio" id="e30" name="generacion" value="e30" checked>
@@ -80,17 +79,16 @@
             <label for="e46">Serie 3 E46</label>
           </div>
 
-          <!-- Checkboxes para opción múltiple -->
           <p><strong>¿Qué tipo de rutas prefieres?</strong></p>
           <div class="campo grupo-opciones">
-            <input type="checkbox" id="costa" name="rutas_favoritas" value="costa">
+            <input type="checkbox" id="costa" name="ruta_costa" value="costa">
             <label for="costa">Costa</label>
 
-            <input type="checkbox" id="montana" name="rutas_favoritas" value="montana">
+            <input type="checkbox" id="montana" name="ruta_montana" value="montana">
             <label for="montana">Montaña</label>
 
-            <input type="checkbox" id="concentraciones" name="rutas_favoritas" value="concentraciones">
-            <label for="concentraciones">Kdd estática / Social</label>
+            <input type="checkbox" id="concentraciones" name="ruta_concentraciones" value="concentraciones">
+            <label for="concentraciones">Quedada estática / Social</label>
           </div>
 
           <div class="campo">
@@ -126,6 +124,7 @@
   <footer>
     <p>Club BMW Clásicos Galicia · Proyecto académico de Lenguajes de Marcas (UD02).</p>
     <p style="font-size: 0.8rem; color: #94a3b8;">Sitio web estático desarrollado con HTML5 y CSS3.</p>
+    <p style="margin-bottom: 0;"><a href="https://dv-coding.github.io/DAM_LMSXI_UD2_Web/" target="_blank">Versión publicada en GitHub Pages</a></p>
   </footer>
 
 </body>
