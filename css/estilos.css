@@ -49,10 +49,13 @@ header {
   color: #ffffff;
   padding: 1.2rem 2rem;
   border-bottom: 4px solid #3a86ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#cabecera-club {
-  float: left;
+header.contenedor-limpio::after {
+  content: none;
 }
 
 #cabecera-club img,
@@ -77,8 +80,6 @@ header h1 {
 }
 
 .enlace-repo {
-  float: right;
-  margin-top: 0.9rem;
   padding: 0.45rem 0.9rem;
   background-color: #13315c;
   color: #ffffff;
