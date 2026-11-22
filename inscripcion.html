@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Formulario para asociarte al Club BMW Clásicos Galicia y participar en nuestras rutas.">
+  <meta name="author" content="Daniel Vergara">
+  <title>Inscripción | Club BMW Clásicos Galicia</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Cabecera del club -->
+  <header>
+    <div id="cabecera-club">
+      <img src="img/logo-club.png" alt="Emblema del Club BMW Clásicos Galicia" width="64" height="64">
+      <div>
+        <h1>Club BMW Clásicos Galicia</h1>
+        <p class="subtitulo">Rutas, mecánica y afición por los Serie 3 clásicos en el noroeste</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú principal -->
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="modelos.html">Modelos y Rutas</a></li>
+      <li><a href="inscripcion.html" class="menu-pagina-activa" aria-current="page">Inscripción</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Únete al club</h2>
+      <p>Rellena este formulario para inscribirte como socio o apuntarte a nuestra próxima ruta.</p>
+      <p class="aviso-form">Los campos con borde rojo a la izquierda son obligatorios.</p>
+
+      <!-- El action redirige a gracias.html, donde se ven los datos al usar method get sin servidor -->
+      <form action="gracias.html" method="get">
+
+        <!-- Datos personales -->
+        <fieldset>
+          <legend>Datos del participante</legend>
+
+          <div class="campo">
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej.: Brais González Castro" required>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="nacimiento" name="nacimiento">
+          </div>
+
+          <div class="campo">
+            <label for="antiguedad">Años de carné de conducir</label>
+            <input type="number" id="antiguedad" name="antiguedad" min="0" max="80" value="1">
+          </div>
+        </fieldset>
+
+        <!-- Datos del vehículo y ruta -->
+        <fieldset>
+          <legend>Tu BMW y preferencias</legend>
+
+          <!-- Radio buttons con el mismo name para opción única -->
+          <p><strong>Generación de tu coche</strong></p>
+          <div class="campo grupo-opciones">
+            <input type="radio" id="e30" name="generacion" value="e30" checked>
+            <label for="e30">Serie 3 E30</label>
+            
+            <input type="radio" id="e36" name="generacion" value="e36">
+            <label for="e36">Serie 3 E36</label>
+
+            <input type="radio" id="e46" name="generacion" value="e46">
+            <label for="e46">Serie 3 E46</label>
+          </div>
+
+          <!-- Checkboxes para opción múltiple -->
+          <p><strong>¿Qué tipo de rutas prefieres?</strong></p>
+          <div class="campo grupo-opciones">
+            <input type="checkbox" id="costa" name="rutas_favoritas" value="costa">
+            <label for="costa">Costa</label>
+
+            <input type="checkbox" id="montana" name="rutas_favoritas" value="montana">
+            <label for="montana">Montaña</label>
+
+            <input type="checkbox" id="concentraciones" name="rutas_favoritas" value="concentraciones">
+            <label for="concentraciones">Kdd estática / Social</label>
+          </div>
+
+          <div class="campo">
+            <label for="provincia">Provincia desde la que sales</label>
+            <select id="provincia" name="provincia">
+              <option value="">-- Selecciona una opción --</option>
+              <option value="pontevedra">Pontevedra</option>
+              <option value="acoruna">A Coruña</option>
+              <option value="lugo">Lugo</option>
+              <option value="ourense">Ourense</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="especificaciones">Detalles del coche (modelo exacto, motorización, etc.)</label>
+            <textarea id="especificaciones" name="especificaciones" rows="4" placeholder="Ej.: 325i Coupe, M50 sin vanos, suspensión roscada..."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Aceptación y botones -->
+        <div class="campo grupo-opciones">
+          <input type="checkbox" id="acepto" name="acepto" value="si" required>
+          <label for="acepto">Acepto que el club gestione mis datos para coordinar las rutas.</label>
+        </div>
+
+        <button type="submit">Enviar inscripción</button>
+        <button type="reset" class="btn-limpiar">Borrar todo</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Club BMW Clásicos Galicia · Proyecto académico de Lenguajes de Marcas (UD02).</p>
+    <p style="font-size: 0.8rem; color: #94a3b8;">Sitio web estático desarrollado con HTML5 y CSS3.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Chasis BMW Serie 3 admitidos en el club y calendario trimestral de rutas por Galicia.">
+  <meta name="author" content="Daniel Vergara">
+  <title>Modelos y Rutas | Club BMW Clásicos Galicia</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Cabecera del club -->
+  <header>
+    <div id="cabecera-club">
+      <img src="img/logo-club.png" alt="Emblema del Club BMW Clásicos Galicia" width="64" height="64">
+      <div>
+        <h1>Club BMW Clásicos Galicia</h1>
+        <p class="subtitulo">Rutas, mecánica y afición por los Serie 3 clásicos en el noroeste</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú principal -->
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="modelos.html" class="menu-pagina-activa" aria-current="page">Modelos y Rutas</a></li>
+      <li><a href="inscripcion.html">Inscripción</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- Galería de modelos del club -->
+    <section>
+      <h2>Los tres pilares del club</h2>
+      <p>Estas son las tres generaciones de la Serie 3 que protagonizan nuestras salidas
+        por carreteras gallegas. Todas destacan por su <strong>propulsión trasera</strong> y puesta a punto.</p>
+
+      <div class="galeria-modelos">
+        <figure>
+          <img src="img/bmw-e30.jpg" alt="BMW Serie 3 E30 rojo con dobles faros redondos" width="260" height="170">
+          <figcaption><strong>Serie 3 E30</strong> (1982–1994)<br>El clásico ochentero por excelencia.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/bmw-e36.jpg" alt="BMW Serie 3 E36 azul oscuro de perfil en carretera" width="260" height="170">
+          <figcaption><strong>Serie 3 E36</strong> (1990–2000)<br>Estabilidad y eje trasero multibrazo.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/bmw-e46.jpg" alt="BMW Serie 3 E46 plateado estacionado en mirador" width="260" height="170">
+          <figcaption><strong>Serie 3 E46</strong> (1998–2006)<br>El último Serie 3 de tacto puramente analógico.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Tabla de calendario de rutas -->
+    <section>
+      <h2>Calendario de rutas del trimestre</h2>
+      <p>La salida se realiza siempre a las 09:30 h con el depósito lleno. La ruta de invierno
+        se divide en dos etapas de fin de semana.</p>
+
+      <table>
+        <caption>Planificación oficial · Otoño / Invierno</caption>
+        <thead>
+          <tr>
+            <th scope="col">Mes</th>
+            <th scope="col">Ruta</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Punto de encuentro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Octubre</th>
+            <td>Tramo Costa da Morte</td>
+            <td>18/10</td>
+            <td rowspan="2">Área de servicio AP-9 (Santiago Norte)</td>
+          </tr>
+          <tr>
+            <th scope="row">Noviembre</th>
+            <td>Miradores de las Rías Baixas</td>
+            <td>15/11</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">Diciembre</th>
+            <td rowspan="2">Ruta Serra do Courel</td>
+            <td>12/12 (Etapa 1)</td>
+            <td rowspan="2">Plaza Mayor de Quiroga (Lugo)</td>
+          </tr>
+          <tr>
+            <td>13/12 (Etapa 2)</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">En caso de alerta meteorológica por lluvia intensa o hielo, la ruta se aplazará al domingo siguiente.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- Glosario técnico -->
+    <section class="ficha">
+      <h2>Vocabulario habitual en nuestras salidas</h2>
+      <dl>
+        <dt>Código E (Entwicklung)</dt>
+        <dd>Denominación interna de desarrollo que identifica cada generación de chasis (E30, E36, E46).</dd>
+        <dt>Coche escoba</dt>
+        <dd>Socio veterano que cierra el grupo con herramienta básica por si surge algún imprevisto mecánico.</dd>
+        <dt>Reagrupamiento</dt>
+        <dd>Parada breve en un punto seguro tras un tramo de curvas para que nadie pierda el enlace.</dd>
+      </dl>
+      <p>¿Necesitas consultar referencias de despiece originales para tu unidad? Revisa el catálogo de
+        <a href="https://www.realoem.com" target="_blank" rel="noopener noreferrer">RealOEM</a>
+        (se abre en una pestaña nueva).</p>
+    </section>
+
+    <p><a href="#cabecera-club">Volver arriba</a></p>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Club BMW Clásicos Galicia · Proyecto académico de Lenguajes de Marcas (UD02).</p>
+    <p style="font-size: 0.8rem; color: #94a3b8;">Sitio web estático desarrollado con HTML5 y CSS3.</p>
+  </footer>
+
+</body>
+</html>
